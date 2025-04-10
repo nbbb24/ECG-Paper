@@ -22,7 +22,7 @@ Embedding: text-embedding-ada-002
 
 Retriever: Nearest Neighbor Search
 
-![Paper Figure](zero_shot_ecg_rag.png)
+![Paper Figure](/Images/zero_shot_ecg_rag.png)
 
 
 ## ECG-Expert-QA: A Benchmark for Evaluating https://arxiv.org/pdf/2502.17475
@@ -41,7 +41,7 @@ Electrocardiogram (ECG) Expertise: Focuses on ECG analysis, including basic prin
 
 Complex Disease Analysis: Generates detailed analysis reports for complex cases by simulating multi-turn dialogues between doctors and patients or medical professionals to formulate diagnostic and treatment plans.
 
-![Paper Figure](ecg_expert_qa.png)
+![Paper Figure](/Images/ecg_expert_qa.png)
 
 ## Electrocardiogram Report Generation and Question Answering via Retrieval-Augmented Self-Supervised Modeling https://arxiv.org/pdf/2409.08788
 
@@ -56,7 +56,7 @@ Complex Disease Analysis: Generates detailed analysis reports for complex cases 
 ### Pre-train
 
 ### Loss Function
-![loss](ecg_selfsupervise_qa_loss.png)
+![loss](/Images/ecg_selfsupervise_qa_loss.png)
 
 •**Masked ECG Modeling (MEM)**: Predict missing ECG signal patches.
 
@@ -73,4 +73,4 @@ Complex Disease Analysis: Generates detailed analysis reports for complex cases 
 **FAISS for vector storage and retrieval** with **L2-normalized ECG embeddings**
 
 
-![](ecg_selfsupervise_qa.png)
+![](/Images/ecg_selfsupervise_qa.png)
