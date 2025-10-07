@@ -1,76 +1,41 @@
-# 📑 ECG-LM
+# 📚 Research Papers Collection
+
+A curated collection of research papers I'm reading, have read, or plan to read.
+
+## 📑 Content by Topic
+
+**Tools**
+
+**Papers**
+- [🧠 Reasoning](#-reasoning)
+- [🤖 Agent](#-agent)
+- [📊 Physiological Signals](#-physiological-signals)
+- [🔬 Multimodal](#-multimodal)
+
+---
+## Tools
+- **[verl](https://github.com/volcengine/verl)** - Volcano Engine Reinforcement Learning for LLMs (RLHF framework supporting FSDP, vLLM, SGLang)
 
 
-## Zero-Shot ECG Diagnosis with Large Language Models and Retrieval-Augmented Generation https://proceedings.mlr.press/v225/yu23b/yu23b.pdf
+## Papers
 
-### Prompt Engineering
-•**Diagnosis Guidance (DG):** Retrieved expert knowledge.
+### 🧠 Reasoning
+- **[QoQ-Med: Building Multimodal Clinical Foundation Models with Domain-Aware GRPO Training](https://arxiv.org/abs/2506.00711)** - Wei Dai, Peilin Chen, Chanakya Ekbote, Paul Pu Liang (2025)
 
-•**Feature Prompt (FeatP):** Extracted ECG features in a structured format.
+### 🤖 Agent
+- **[The Anatomy of a Personal Health Agent](https://arxiv.org/abs/2508.20148)** - A. Ali Heydari, Ken Gu, Vidya Srinivas, Hong Yu, et al. (2025)
 
-•**Augmenting Information (AI):** Additional retrieved knowledge for context.
+### 📊 Physiological Signals
+- **[ECG-QA: A Comprehensive Question Answering Dataset Combined With Electrocardiogram](https://arxiv.org/abs/2306.15681)** - Jungwoo Oh, Gyubok Lee, Seongsu Bae, Joon-myoung Kwon, Edward Choi (2023)
+- **[ECG-Chat: A Large ECG-Language Model for Cardiac Disease Diagnosis](https://arxiv.org/abs/2408.08849)** - Yubao Zhao, Jiaju Kang, Tian Zhang, Puyu Han, Tong Chen (2024)
+- **[ECG-Byte: A Tokenizer for End-to-End Generative Electrocardiogram Language Modeling](https://arxiv.org/abs/2412.14373)** - William Han, Chaojing Duan, Michael A. Rosenberg, Emerson Liu, Ding Zhao (2024)
+- **[GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images](https://arxiv.org/abs/2503.06073)** - Xiang Lan, Feng Wu, Kai He, Qinghao Zhao, Shenda Hong, Mengling Feng (2025)
+- **[Signal, Image, or Symbolic: Exploring the Best Input Representation for Electrocardiogram-Language Models Through a Unified Framework](https://arxiv.org/abs/2505.18847)** - William Han, Chaojing Duan, Zhepeng Cen, Yihang Yao, Xiaoyu Song, Atharva Mhaskar, Dylan Leong, Michael A. Rosenberg, Emerson Liu, Ding Zhao (2025)
+- **[Retrieval-Augmented Generation for Electrocardiogram-Language Models](https://arxiv.org/abs/2510.00261)** - Xiaoyu Song, William Han, Tony Chen, Chaojing Duan, Michael A. Rosenberg, Emerson Liu, Ding Zhao (2025)
 
-•**Format Prompt (FP):** Instructs LLMs to output structured JSON responses.
-
-DG is retrieved from textbook and is included in every prompt
-
-### Retrieval
-
-VecDB: ChromaDB
-
-Embedding: text-embedding-ada-002
-
-Retriever: Nearest Neighbor Search
-
-![Paper Figure](/Images/zero_shot_ecg_rag.png)
+### 🔬 Multimodal
+- **[CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models](https://arxiv.org/abs/2503.07667)** - Wei Dai, Peilin Chen, Malinda Lu, Daniel Li, Haowen Wei, Hejie Cui, Paul Pu Liang (2025)
 
 
-## ECG-Expert-QA: A Benchmark for Evaluating https://arxiv.org/pdf/2502.17475
-
-### Data Processing
-
-exclude highly similar records (cos>0.8)
-
-only patients with ≥4 reports
-
-### Tasks
-
-Basic Cardiology: Covers fundamental medical knowledge of heart diseases, including cardiac anatomy and function, common types of heart diseases
-
-Electrocardiogram (ECG) Expertise: Focuses on ECG analysis, including basic principles, waveform analysis, identification of common abnormalities 
-
-Complex Disease Analysis: Generates detailed analysis reports for complex cases by simulating multi-turn dialogues between doctors and patients or medical professionals to formulate diagnostic and treatment plans.
-
-![Paper Figure](/Images/ecg_expert_qa.png)
-
-## Electrocardiogram Report Generation and Question Answering via Retrieval-Augmented Self-Supervised Modeling https://arxiv.org/pdf/2409.08788
-
-(1) self-supervised pre-training
-
-(2) embedding generation and indexing
-
-(3) report retrieval and refinement
-
-(4) zero-shot LLM-based question-answering
-
-### Pre-train
-
-### Loss Function
-![loss](/Images/ecg_selfsupervise_qa_loss.png)
-
-•**Masked ECG Modeling (MEM)**: Predict missing ECG signal patches.
-
-•**Masked Language Modeling (MLM)**: Predict missing words in reports.
-
-•**ECG-Text Matching (ETM)**: Classifies whether an ECG and text pair are correctly matched.
-
-### Structure
-
-1. separate uni-modal encoders
-2. a multi-modal fusion module 
-3. separate uni-modal decoders for pre-training tasks
-
-**FAISS for vector storage and retrieval** with **L2-normalized ECG embeddings**
 
 
-![](/Images/ecg_selfsupervise_qa.png)
