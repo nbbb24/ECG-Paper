@@ -28,6 +28,9 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 ### 🧠 Reasoning
 - **[Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)** - John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (2017)
 - **[Understanding the Math Behind GRPO — DeepSeek-R1-Zero](https://medium.com/yugen-ai-technology-blog/understanding-the-math-behind-grpo-deepseek-r1-zero-9fb15e103a0a)** - Soumanta Das, Yugen.ai (2025)
+- **[DeepSeek-V3 Explained 1: Multi-head Latent Attention](https://medium.com/data-science/deepseek-v3-explained-1-multi-head-latent-attention-ed6bee2a67c4)** - Shirley Li (2025)
+- **[Mixture-of-Experts (MoE) LLMs](https://cameronrwolfe.substack.com/p/moe-llms)** - Cameron R. Wolfe (2025)
+- **[DeepSeek-V3 — Advances in MoE Load Balancing and Multi-Token Prediction Training](https://medium.com/yugen-ai-technology-blog/deepseek-v3-advances-in-moe-load-balancing-and-multi-token-prediction-training-f6d68c59749c)** - Soumanta Das, Yugen.ai (2025)
 - **[DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)** - Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, et al. (2024)
 - **[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)** - DeepSeek-AI (2025)
 - **[QoQ-Med: Building Multimodal Clinical Foundation Models with Domain-Aware GRPO Training](https://arxiv.org/abs/2506.00711)** - Wei Dai, Peilin Chen, Chanakya Ekbote, Paul Pu Liang (2025)
