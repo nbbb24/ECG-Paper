@@ -14,7 +14,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - [🔬 Multimodal](#-multimodal)
 
 **Courses**
-- [CMU Courses](#courses)
+- [Courses](#courses)
 
 ---
 ## Tools
