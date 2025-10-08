@@ -9,8 +9,12 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 **Papers**
 - [🧠 Reasoning](#-reasoning)
 - [🤖 Agent](#-agent)
+- [💬 Large Language Model](#-large-language-model)
 - [📊 Physiological Signals](#-physiological-signals)
 - [🔬 Multimodal](#-multimodal)
+
+**Courses**
+- [CMU Courses](#courses)
 
 ---
 ## Tools
@@ -32,6 +36,12 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 ### 🤖 Agent
 - **[The Anatomy of a Personal Health Agent](https://arxiv.org/abs/2508.20148)** - A. Ali Heydari, Ken Gu, Vidya Srinivas, Hong Yu, et al. (2025)
 
+### 💬 Large Language Model
+- **[Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)** - Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (2017)
+- **[LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)** - Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, et al. (2021)
+- **[The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783)** - Meta AI (2024)
+- **[Qwen2.5 Technical Report](https://arxiv.org/abs/2412.15115)** - Qwen Team, Alibaba (2024)
+
 ### 📊 Physiological Signals
 - **[ECG-QA: A Comprehensive Question Answering Dataset Combined With Electrocardiogram](https://arxiv.org/abs/2306.15681)** - Jungwoo Oh, Gyubok Lee, Seongsu Bae, Joon-myoung Kwon, Edward Choi (2023)
 - **[Health-LLM: Large Language Models for Health Prediction via Wearable Sensor Data](https://arxiv.org/abs/2401.06866)** - Yubin Kim, Xuhai Xu, Daniel McDuff, Cynthia Breazeal, Hae Won Park (2024)
@@ -44,8 +54,18 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - **[LSM-2: Learning from Incomplete Wearable Sensor Data](https://arxiv.org/abs/2506.05321)** - Maxwell A. Xu, Girish Narayanswamy, Kumar Ayush, Dimitris Spathis, et al. (2025)
 
 ### 🔬 Multimodal
+- **[Zero-Shot Text-to-Image Generation (DALL-E)](https://arxiv.org/abs/2102.12092)** - Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, Scott Gray, Chelsea Voss, Alec Radford, Mark Chen, Ilya Sutskever (2021)
+- **[Learning Transferable Visual Models From Natural Language Supervision (CLIP)](https://arxiv.org/abs/2103.00020)** - Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, et al. (2021)
+- **[BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](https://arxiv.org/abs/2201.12086)** - Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi (2022)
+- **[Visual Instruction Tuning (LLaVA)](https://arxiv.org/abs/2304.08485)** - Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee (2023)
 - **[CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models](https://arxiv.org/abs/2503.07667)** - Wei Dai, Peilin Chen, Malinda Lu, Daniel Li, Haowen Wei, Hejie Cui, Paul Pu Liang (2025)
+- **[Qwen2.5-VL Technical Report](https://arxiv.org/abs/2502.13923)** - Qwen Team, Alibaba (2025)
 
+---
 
+## Courses
 
-
+- **[Large Language Models: Methods, Analysis, and Applications](https://cmu-llms.org/)** - CMU 11-667/11-867
+- **[Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2025/)** - CMU 11-711, Spring 2025
+- **[How To AI (Almost) Anything](https://mit-mi.github.io/how2ai-course/spring2025/)** - MIT MAS.S60, Spring 2025
+- **[Affective Computing and Multimodal Interaction](https://sites.google.com/media.mit.edu/2025acmmi/)** - MIT MAS.S63, Fall 2025
