@@ -15,12 +15,19 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 ---
 ## Tools
 - **[verl](https://github.com/volcengine/verl)** - Volcano Engine Reinforcement Learning for LLMs (RLHF framework supporting FSDP, vLLM, SGLang)
+- **[HeartPy](https://github.com/paulvangentcom/heartrate_analysis_python)** - Python Heart Rate Analysis Toolkit for PPG and ECG signals (time-domain & frequency-domain measures)
+- **[Braindecode](https://github.com/braindecode/braindecode)** - Deep learning toolbox for decoding EEG, ECG, and MEG signals (PyTorch-based, includes datasets, preprocessing, models)
 
 
-## Papers
+## Papers and Blogs
 
 ### 🧠 Reasoning
+- **[Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)** - John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (2017)
+- **[Understanding the Math Behind GRPO — DeepSeek-R1-Zero](https://medium.com/yugen-ai-technology-blog/understanding-the-math-behind-grpo-deepseek-r1-zero-9fb15e103a0a)** - Soumanta Das, Yugen.ai (2025)
+- **[DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)** - Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, et al. (2024)
+- **[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)** - DeepSeek-AI (2025)
 - **[QoQ-Med: Building Multimodal Clinical Foundation Models with Domain-Aware GRPO Training](https://arxiv.org/abs/2506.00711)** - Wei Dai, Peilin Chen, Chanakya Ekbote, Paul Pu Liang (2025)
+- **[MedCritical: Enhancing Medical Reasoning in Small Language Models via Self-Collaborative Correction](https://arxiv.org/abs/2509.23368)** - (2025)
 
 ### 🤖 Agent
 - **[The Anatomy of a Personal Health Agent](https://arxiv.org/abs/2508.20148)** - A. Ali Heydari, Ken Gu, Vidya Srinivas, Hong Yu, et al. (2025)
