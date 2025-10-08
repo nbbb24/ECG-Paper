@@ -73,3 +73,9 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - **[Multimodal Machine Learning](https://cmu-mmml.github.io/)** - CMU 11-777
 - **[How To AI (Almost) Anything](https://mit-mi.github.io/how2ai-course/spring2025/)** - MIT MAS.S60, Spring 2025
 - **[Affective Computing and Multimodal Interaction](https://sites.google.com/media.mit.edu/2025acmmi/)** - MIT MAS.S63, Fall 2025
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
