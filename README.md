@@ -70,5 +70,6 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 
 - **[Large Language Models: Methods, Analysis, and Applications](https://cmu-llms.org/)** - CMU 11-667/11-867
 - **[Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2025/)** - CMU 11-711, Spring 2025
+- **[Multimodal Machine Learning](https://cmu-mmml.github.io/)** - CMU 11-777
 - **[How To AI (Almost) Anything](https://mit-mi.github.io/how2ai-course/spring2025/)** - MIT MAS.S60, Spring 2025
 - **[Affective Computing and Multimodal Interaction](https://sites.google.com/media.mit.edu/2025acmmi/)** - MIT MAS.S63, Fall 2025
