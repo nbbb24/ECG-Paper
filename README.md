@@ -41,6 +41,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 
 ### 💬 Large Language Model
 - **[Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)** - Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (2017)
+- **[Deep contextualized word representations (ELMo)](https://arxiv.org/abs/1802.05365)** - Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer (2018)
 - **[LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)** - Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, et al. (2021)
 - **[The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783)** - Meta AI (2024)
 - **[Qwen2.5 Technical Report](https://arxiv.org/abs/2412.15115)** - Qwen Team, Alibaba (2024)
@@ -70,7 +71,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 
 - **[Large Language Models: Methods, Analysis, and Applications](https://cmu-llms.org/)** - CMU 11-667/11-867
 - **[Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2025/)** - CMU 11-711, Spring 2025
-- **[Multimodal Machine Learning](https://cmu-mmml.github.io/)** - CMU 11-777
+- **[Multimodal Machine Learning](https://cmu-mmml.github.io/)** ([YouTube](https://www.youtube.com/@LPMorency)) - CMU 11-777
 - **[How To AI (Almost) Anything](https://mit-mi.github.io/how2ai-course/spring2025/)** - MIT MAS.S60, Spring 2025
 - **[Affective Computing and Multimodal Interaction](https://sites.google.com/media.mit.edu/2025acmmi/)** - MIT MAS.S63, Fall 2025
 
