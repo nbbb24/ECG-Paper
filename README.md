@@ -70,6 +70,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 
 ## Courses
 
+- **[Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/F25/index.html)** - CMU 11-785, Fall 2025
 - **[Large Language Models: Methods, Analysis, and Applications](https://cmu-llms.org/)** - CMU 11-667/11-867
 - **[Advanced Natural Language Processing](https://cmu-l3.github.io/anlp-spring2025/)** - CMU 11-711, Spring 2025
 - **[Multimodal Machine Learning](https://cmu-mmml.github.io/)** ([YouTube](https://www.youtube.com/@LPMorency)) - CMU 11-777
