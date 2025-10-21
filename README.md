@@ -18,6 +18,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 
 ---
 ## Tools
+- **[ComfyAI](https://comfyai.app/)** - Collection of LLM techniques and workflows
 - **[verl](https://github.com/volcengine/verl)** - Volcano Engine Reinforcement Learning for LLMs (RLHF framework supporting FSDP, vLLM, SGLang)
 - **[HeartPy](https://github.com/paulvangentcom/heartrate_analysis_python)** - Python Heart Rate Analysis Toolkit for PPG and ECG signals (time-domain & frequency-domain measures)
 - **[Braindecode](https://github.com/braindecode/braindecode)** - Deep learning toolbox for decoding EEG, ECG, and MEG signals (PyTorch-based, includes datasets, preprocessing, models)
