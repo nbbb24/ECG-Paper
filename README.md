@@ -28,6 +28,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 
 ### 🧠 Reasoning
 - **[Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)** - John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (2017)
+- **[Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601)** - Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan (2023)
 - **[Understanding the Math Behind GRPO — DeepSeek-R1-Zero](https://medium.com/yugen-ai-technology-blog/understanding-the-math-behind-grpo-deepseek-r1-zero-9fb15e103a0a)** - Soumanta Das, Yugen.ai (2025)
 - **[DeepSeek-V3 Explained 1: Multi-head Latent Attention](https://medium.com/data-science/deepseek-v3-explained-1-multi-head-latent-attention-ed6bee2a67c4)** - Shirley Li (2025)
 - **[Mixture-of-Experts (MoE) LLMs](https://cameronrwolfe.substack.com/p/moe-llms)** - Cameron R. Wolfe (2025)
