@@ -13,6 +13,9 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - [📊 Physiological Signals](#-physiological-signals)
 - [🔬 Multimodal](#-multimodal)
 
+**Knowledge Base**
+- [📖 AI/ML Knowledge](#-aiml-knowledge)
+
 **Courses**
 - [Courses](#courses)
 
@@ -71,6 +74,176 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - **[Visual Instruction Tuning (LLaVA)](https://arxiv.org/abs/2304.08485)** - Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee (2023)
 - **[CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models](https://arxiv.org/abs/2503.07667)** - Wei Dai, Peilin Chen, Malinda Lu, Daniel Li, Haowen Wei, Hejie Cui, Paul Pu Liang (2025)
 - **[Qwen2.5-VL Technical Report](https://arxiv.org/abs/2502.13923)** - Qwen Team, Alibaba (2025)
+
+---
+
+## 📖 AI/ML Knowledge
+
+### 🤖 Reinforcement Learning from Human Feedback (RLHF)
+
+**Reinforcement Learning from Human Feedback (RLHF)** aligns large language models (LLMs) with human preferences.  
+It combines human evaluation, supervised fine-tuning (SFT), and reinforcement learning (RL) to produce helpful, safe, and aligned models.
+
+#### 🧭 Overview
+
+RLHF consists of three major stages:
+
+1. **Supervised Fine-Tuning (SFT)** – Teach the model to follow instructions.
+2. **Reward Model (RM)** – Learn to predict which responses humans prefer.
+3. **Reinforcement Learning (RL)** – Optimize the model using feedback through PPO (Proximal Policy Optimization).
+
+#### 🧩 Core Concepts
+
+- **State space:** information available to the model  
+- **Action space:** possible outputs (tokens)  
+- **Reward function:** quantifies how good an answer is  
+- **Policy (πθ):** the model's strategy for generating tokens  
+- **Constraint (CLIP):** keeps updates stable  
+
+#### 🧠 Step 1 — Pretraining
+
+A transformer model is trained on massive text corpora to predict the next token, building language and reasoning abilities.
+
+#### 📘 Step 2 — Supervised Fine-Tuning (SFT)
+
+Fine-tune the model with instruction–response pairs from humans.
+
+> Example  
+> Prompt: "Summarize this article."  
+> Response: "It discusses how RLHF aligns models with human feedback."
+
+Mathematically:  
+`y = πθ(x)`
+
+#### ⭐ Step 3 — Reward Model Training
+
+Humans rank responses (A1 > A2 > A3).  
+The reward model outputs a scalar `rφ(x, y)` that reflects these preferences.
+
+**Loss function:**  
+`L = −log(σ(rφ(x, yc) − rφ(x, yr)))`
+
+where:  
+- `yc` = preferred answer  
+- `yr` = rejected answer  
+- `σ` = sigmoid function  
+
+If the model ranks correctly → loss ≈ 0  
+If it ranks incorrectly → loss increases.
+
+#### 🎯 Step 4 — Reinforcement Learning (PPO)
+
+**Models involved:**
+
+| Model | Role |
+|--------|------|
+| **Actor (πθ)** | Generates responses |
+| **Reward Model (rφ)** | Scores responses |
+| **Critic (Vψ)** | Estimates expected reward |
+| **Reference (π₀)** | Frozen SFT model for stability |
+
+**Equations:**  
+```
+Reward:     r = rφ(x, y)
+Value:      V = Vψ(x)
+Advantage:  A = r − V
+PPO Update: ratio = πθ(y|x)/π₀(y|x)
+L_PPO = −E[min(ratio × A, clip(ratio, 1−ε, 1+ε) × A)]
+```
+
+#### 🧱 Simplified Pseudocode
+
+```python
+for step in training:
+    y = actor.generate(x)
+    reward = reward_model(x, y)
+    value = critic(x)
+    advantage = reward - value
+
+    ratio = actor.prob(y|x) / ref_model.prob(y|x)
+    clipped = clip(ratio, 1 - eps, 1 + eps)
+    loss = -min(ratio * advantage, clipped * advantage)
+
+    optimize(actor, loss)
+    update(critic)
+```
+
+#### 🧱 ASCII Workflow Diagram
+
+```
+          ┌──────────────────────────────┐
+          │        User Prompt x         │
+          └──────────────┬───────────────┘
+                         │
+                         ▼
+             ┌──────────────────────┐
+             │   Actor Model πθ     │
+             │ (Generates answer)   │
+             └──────────┬───────────┘
+                        │
+                        ▼
+             ┌──────────────────────┐
+             │ Reward Model rφ(x,y) │
+             │ (Scores answer)      │
+             └──────────┬───────────┘
+                        │
+                        ▼
+             ┌──────────────────────┐
+             │   Critic Vψ(x)       │
+             │ (Estimates value)    │
+             └──────────┬───────────┘
+                        │
+                        ▼
+             ┌──────────────────────┐
+             │ Compute Advantage A  │
+             │       A = r − V      │
+             └──────────┬───────────┘
+                        │
+                        ▼
+             ┌─────────────────────────────┐
+             │ PPO Update + CLIP Constraint│
+             │ Keep close to reference π₀  │
+             └─────────────────────────────┘
+```
+
+#### ⚖️ Concept Summary
+
+| Term | Meaning |
+|------|----------|
+| **Actor** | Learns to generate better answers |
+| **Reward Model** | Judges human preference |
+| **Critic** | Baseline expectation |
+| **Advantage (A)** | How much better the action was than expected |
+| **CLIP** | Prevents large, unstable updates |
+| **Reference Model** | Keeps behavior near SFT baseline |
+
+#### 🧩 Full Equation Summary
+
+```
+1. y = πθ(x)
+2. r = rφ(x, y)
+3. V = Vψ(x)
+4. A = r − V
+5. L_RM = −log(σ(r_c − r_r))
+6. L_PPO = −E[min(ratio*A, clip(ratio,1−ε,1+ε)*A)]
+```
+
+#### 🧠 In Plain Words
+
+1. Pretrain the model on text.  
+2. Fine-tune it with human examples (SFT).  
+3. Train a reward model to learn preferences.  
+4. Use RL (PPO) to reinforce high-reward behaviors.  
+5. Constrain updates with CLIP and a reference model for stability.
+
+**Result:** A model that is *helpful, truthful, and aligned with human intent.*
+
+#### 📚 References
+
+- Christiano et al., "Deep Reinforcement Learning from Human Preferences," NeurIPS 2017  
+- OpenAI (2022), "Training Language Models to Follow Instructions with Human Feedback"  
+- Anthropic (2023), "Constitutional AI"  
+- Hugging Face TRL — PPO for RLHF
 
 ---
 
