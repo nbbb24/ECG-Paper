@@ -20,6 +20,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 ## Tools
 - **[ComfyAI](https://comfyai.app/)** - Collection of LLM techniques and workflows
 - **[verl](https://github.com/volcengine/verl)** - Volcano Engine Reinforcement Learning for LLMs (RLHF framework supporting FSDP, vLLM, SGLang)
+- **[FeatureDB](https://github.com/PKUDigitalHealth/FeatureDB)** - Pattern recognition methods for ECG feature extraction (expert features including HRV, morphologic variability, frequency domain, QRS axis)
 - **[HeartPy](https://github.com/paulvangentcom/heartrate_analysis_python)** - Python Heart Rate Analysis Toolkit for PPG and ECG signals (time-domain & frequency-domain measures)
 - **[Braindecode](https://github.com/braindecode/braindecode)** - Deep learning toolbox for decoding EEG, ECG, and MEG signals (PyTorch-based, includes datasets, preprocessing, models)
 
@@ -49,8 +50,10 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - **[Qwen2.5 Technical Report](https://arxiv.org/abs/2412.15115)** - Qwen Team, Alibaba (2024)
 
 ### 📊 Physiological Signals
+- **[ENCASE: an ENsemble ClASsifiEr for ECG Classification Using Expert Features and Deep Neural Networks](https://www.cinc.org/archives/2017/pdf/178-245.pdf)** - Shenda Hong, Meng Wu, Yuxi Zhou, Qingyun Wang, Junyuan Shang, Hongyan Li, Junqing Xie (2017)
 - **[ECG-QA: A Comprehensive Question Answering Dataset Combined With Electrocardiogram](https://arxiv.org/abs/2306.15681)** - Jungwoo Oh, Gyubok Lee, Seongsu Bae, Joon-myoung Kwon, Edward Choi (2023)
 - **[Health-LLM: Large Language Models for Health Prediction via Wearable Sensor Data](https://arxiv.org/abs/2401.06866)** - Yubin Kim, Xuhai Xu, Daniel McDuff, Cynthia Breazeal, Hae Won Park (2024)
+- **[A lightweight deep neural network for personalized detecting ventricular arrhythmias from a single-lead ECG device](https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0001037)** - Zhejun Sun, Wenrui Zhang, Yuxi Zhou, Shijia Geng, et al. (2025)
 - **[ECG-Chat: A Large ECG-Language Model for Cardiac Disease Diagnosis](https://arxiv.org/abs/2408.08849)** - Yubao Zhao, Jiaju Kang, Tian Zhang, Puyu Han, Tong Chen (2024)
 - **[ECG-Byte: A Tokenizer for End-to-End Generative Electrocardiogram Language Modeling](https://arxiv.org/abs/2412.14373)** - William Han, Chaojing Duan, Michael A. Rosenberg, Emerson Liu, Ding Zhao (2024)
 - **[GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images](https://arxiv.org/abs/2503.06073)** - Xiang Lan, Feng Wu, Kai He, Qinghao Zhao, Shenda Hong, Mengling Feng (2025)
@@ -58,6 +61,8 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - **[Retrieval-Augmented Generation for Electrocardiogram-Language Models](https://arxiv.org/abs/2510.00261)** - Xiaoyu Song, William Han, Tony Chen, Chaojing Duan, Michael A. Rosenberg, Emerson Liu, Ding Zhao (2025)
 - **[SensorLM: Learning the Language of Wearable Sensors](https://arxiv.org/abs/2506.09108)** - Yuwei Zhang, Kumar Ayush, Siyuan Qiao, A. Ali Heydari, et al. (2025)
 - **[LSM-2: Learning from Incomplete Wearable Sensor Data](https://arxiv.org/abs/2506.05321)** - Maxwell A. Xu, Girish Narayanswamy, Kumar Ayush, Dimitris Spathis, et al. (2025)
+- **[PPGFlowECG: Latent Rectified Flow with Cross-Modal Encoding for PPG-Guided ECG Generation and Cardiovascular Disease Detection](https://arxiv.org/abs/2509.19774)** - Xiaocheng Fang, Jiarui Jin, Haoyu Wang, Che Liu, Jieyi Cai, Guangkun Nie, Jun Li, Hongyan Li, Shenda Hong (2025)
+- **[MEETI: A Multimodal ECG Dataset from MIMIC-IV-ECG with Signals, Images, Features and Interpretations](https://arxiv.org/abs/2507.15255)** - Deyun Zhang, Xiang Lan, Shijia Geng, Qinghao Zhao, Sumei Fan, Mengling Feng, Shenda Hong (2025)
 
 ### 🔬 Multimodal
 - **[Zero-Shot Text-to-Image Generation (DALL-E)](https://arxiv.org/abs/2102.12092)** - Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, Scott Gray, Chelsea Voss, Alec Radford, Mark Chen, Ilya Sutskever (2021)
