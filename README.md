@@ -41,6 +41,7 @@ A curated collection of research papers I'm reading, have read, or plan to read.
 - **[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)** - DeepSeek-AI (2025)
 - **[QoQ-Med: Building Multimodal Clinical Foundation Models with Domain-Aware GRPO Training](https://arxiv.org/abs/2506.00711)** - Wei Dai, Peilin Chen, Chanakya Ekbote, Paul Pu Liang (2025)
 - **[MedCritical: Enhancing Medical Reasoning in Small Language Models via Self-Collaborative Correction](https://arxiv.org/abs/2509.23368)** - (2025)
+- **[OpenTSLM: Time-Series Language Models for Reasoning over Multivariate Medical Text- and Time-Series Data](https://arxiv.org/abs/2510.02410)** - Patrick Langer, Thomas Kaar, Max Rosenblattl, Maxwell A. Xu, Winnie Chow, et al. (2025)
 
 ### 🤖 Agent
 - **[The Anatomy of a Personal Health Agent](https://arxiv.org/abs/2508.20148)** - A. Ali Heydari, Ken Gu, Vidya Srinivas, Hong Yu, et al. (2025)
